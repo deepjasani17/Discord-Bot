@@ -3,7 +3,7 @@ const fs = require('fs');
 const { Client, GatewayIntentBits, time } = require("discord.js");
 const QuickChart = require('quickchart-js');
 const { reverse } = require('dns');
-const API_KEY = '4NJCL5ESJLYIRN23';
+const API_KEY = 'API KEY';
 const client = new Client({ 
     intents: [
         GatewayIntentBits.Guilds, 
