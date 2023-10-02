@@ -3,7 +3,7 @@ const fs = require('fs');
 const { Client, GatewayIntentBits, time } = require("discord.js");
 const QuickChart = require('quickchart-js');
 const { reverse } = require('dns');
-const API_KEY = 'API KEY';
+const API_KEY = '4NJCL5ESJLYIRN23';
 const client = new Client({ 
     intents: [
         GatewayIntentBits.Guilds, 
@@ -426,5 +426,5 @@ client.on('messageCreate',async (message) => {
 });
 
 client.login(
-    'Client id'
+    'MTEzNDQ2MTIzOTcyOTMyNDIxNA.GiHsdw.n_N1tMoYGWF2e0gRNXtbf8ghlPNkpqptfwgXrQ'
 );
