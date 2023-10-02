@@ -426,5 +426,5 @@ client.on('messageCreate',async (message) => {
 });
 
 client.login(
-    'MTEzNDQ2MTIzOTcyOTMyNDIxNA.G813bW.dJdTmZUgrX_DXqasBN9abmDFnWt04NmgtcnK3o'
+    'Client id'
 );
