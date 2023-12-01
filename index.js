@@ -4,7 +4,7 @@ const fs = require('fs');
 const { Client, GatewayIntentBits, time } = require("discord.js");
 const QuickChart = require('quickchart-js');
 const { reverse } = require('dns');
-const API_KEY = `${process.env.API_KEY}`;
+const API_KEY = 'API key';
 const client = new Client({ 
     intents: [
         GatewayIntentBits.Guilds, 
@@ -427,5 +427,5 @@ client.on('messageCreate',async (message) => {
 });
 
 client.login(
-    `${process.env.CLIENT_LOGIN}`
+    'client id'
 );
