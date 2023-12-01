@@ -1,10 +1,10 @@
+require('dotenv').config()
 const nodeFetch = require('node-fetch');
 const fs = require('fs');
 const { Client, GatewayIntentBits, time } = require("discord.js");
 const QuickChart = require('quickchart-js');
 const { reverse } = require('dns');
 const API_KEY = `${process.env.API_KEY}`;
-require('dotenv').config()
 const client = new Client({ 
     intents: [
         GatewayIntentBits.Guilds, 
@@ -428,5 +428,4 @@ client.on('messageCreate',async (message) => {
 
 client.login(
     `${process.env.CLIENT_LOGIN}`
-    // 'MTEzNDQ2MTIzOTcyOTMyNDIxNA.GqgNey.vJnX2Ucl39GEJ06IqtkTEpSmu_IO9qe6rOhI2s'
 );
