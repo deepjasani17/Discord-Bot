@@ -3,7 +3,8 @@ const fs = require('fs');
 const { Client, GatewayIntentBits, time } = require("discord.js");
 const QuickChart = require('quickchart-js');
 const { reverse } = require('dns');
-const API_KEY = '4NJCL5ESJLYIRN23';
+const API_KEY = `${process.env.API_KEY}`;
+require('dotenv').config()
 const client = new Client({ 
     intents: [
         GatewayIntentBits.Guilds, 
@@ -426,5 +427,6 @@ client.on('messageCreate',async (message) => {
 });
 
 client.login(
-    'MTEzNDQ2MTIzOTcyOTMyNDIxNA.GiHsdw.n_N1tMoYGWF2e0gRNXtbf8ghlPNkpqptfwgXrQ'
+    `${process.env.CLIENT_LOGIN}`
+    // 'MTEzNDQ2MTIzOTcyOTMyNDIxNA.GqgNey.vJnX2Ucl39GEJ06IqtkTEpSmu_IO9qe6rOhI2s'
 );
