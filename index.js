@@ -1,10 +1,11 @@
-require('dotenv').config()
+const dotenv = require("dotenv");
 const nodeFetch = require('node-fetch');
 const fs = require('fs');
 const { Client, GatewayIntentBits, time } = require("discord.js");
 const QuickChart = require('quickchart-js');
 const { reverse } = require('dns');
-const API_KEY = 'API key';
+dotenv.config({path:'./.env'});
+const API_KEY = process.env.API_KEY;
 const client = new Client({ 
     intents: [
         GatewayIntentBits.Guilds, 
@@ -83,7 +84,7 @@ client.on('messageCreate',async (message) => {
                         return;
                     }
                     message.reply({
-                        content:`Here is the list of top gainers(NYSE) are :- ${topG}`,
+                        content:`Here is the list of top gainers(NYSE) :- ${topG}`,
                     });
                     f=1;
                     break;
@@ -108,7 +109,7 @@ client.on('messageCreate',async (message) => {
                         return;
                     }
                     message.reply({
-                        content:`Here is the list of top losers(NYSE) are :- ${topL}`,
+                        content:`Here is the list of top losers(NYSE) :- ${topL}`,
                     });
                     f=1;
                     break;
@@ -426,6 +427,8 @@ client.on('messageCreate',async (message) => {
     }
 });
 
+const cid = process.env.CLIENT_ID;
+
 client.login(
-    'client id'
+    cid
 );
