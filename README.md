@@ -7,7 +7,6 @@ A Discord bot that provides stock information and charts using the Alpha Vantage
 - Responds to stock queries with real-time data from Alpha Vantage.
 - Provides information on top gainers and losers.
 - Generates performance charts for stocks over different periods (7 days, 1 month, 6 months, and 1 year).
-- Includes a demo video showcasing the bot's functionality.
 
 ## Dependencies
 
