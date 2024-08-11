@@ -40,7 +40,7 @@ A Discord bot that provides stock information and charts using the Alpha Vantage
 
 ## Usage
 
-1. Invite the bot to your Discord server using the provided client ID.
+1. Join my discord server to use the stockbot.
 2. Use the bot by mentioning it in your messages with the stock query. For example:
     - `@StockBot AAPL`
     - `@StockBot top gainers`
