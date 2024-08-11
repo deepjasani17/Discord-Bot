@@ -30,7 +30,7 @@ A Discord bot that provides stock information and charts using the Alpha Vantage
    ```bash
    npm install
 4. Create a `.env` file in the root directory with the following content:
-   ```bash
+   ```env
    API_KEY=your_alpha_vantage_api_key
    CLIENT_ID=your_discord_bot_client_id
 5. Run the bot:
