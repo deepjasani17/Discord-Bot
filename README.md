@@ -53,6 +53,6 @@ A Discord bot that provides stock information and charts using the Alpha Vantage
 2. Discord.js for the bot framework.
 3. QuickChart for generating charts.
 
-## Demo video of StockBot
+## Outcome
 
 https://github.com/deepjasani17/Discord-bot/assets/130975061/213c3aac-be27-4825-8ee5-f9000ba31256
